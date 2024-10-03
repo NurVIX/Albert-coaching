@@ -1,12 +1,12 @@
 {
   "name": "my-react-app",
   "version": "1.0.0",
-  "scripts": {
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+ "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "engines": {
     "node": "16.x",
     "npm": "7.x"

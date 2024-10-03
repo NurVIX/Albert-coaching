@@ -4,7 +4,7 @@ body {
 Button{
   width: 150px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: #f5ecec;
   font-family: 'DM Sans', sans-serif;
   font-size: 15px;
@@ -146,11 +146,10 @@ p { margin:0 }
   align-content: center;
   position: sticky;
   top: 60px;
-  z-index: -1;
 }
 
 .titleHome{
-  z-index: 2;
+  z-index: 10;
   text-align: center;
   color: white; 
 }
@@ -158,17 +157,26 @@ p { margin:0 }
   font-size: 70px;
   font-family: 'Great Vibes';
 }
+.buttomPlacement{
+  display: flex;
+  justify-content: center; 
+}
 .CostumeButton{
-  width: 100px;
-  height: 50px;
-  border:3px;
+  display: flex;
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  border: 3px solid #ffffff;
   font-family: 'DM Sans';
   color: white;
-  text-align: center;
-  line-height: central;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 .CostumeButton-button:hover{
-  background-color: #ffffff;
+  background-color: #cac3c3;
   transition: all 0.3s ease;
 
 }
@@ -206,19 +214,20 @@ p { margin:0 }
   font-size: 20px;
   width: 30vw;
 }
-.secondimageContainer{
+.secondimageContainer {
   background-image: url("/static/AlbertoQ5.webp");
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   height: 80vh;
   background-position: center;
-  align-content: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .secondsubtitle{
   padding: 10%;
@@ -551,39 +560,38 @@ p { margin:0 }
   font-size: 20px;
 }
 .ChampionContainer{
-  height: 65vh;
+  height: 70vh;
+  width: 100vw;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.AboutTournamenttitles{
+  width: 50%;
+  padding: 10%;
 }
 .ChampionImage{
   opacity: 1;
   display: block;
   height: 100%;
-  transition: .5s ease;
   overflow: hidden;
-  width: 100%;
+  width: 50%;
   object-fit: cover;
+  padding-left: 10%
 }
-
-.ChampionText{
-  opacity: 0;
-  transition: .5s ease;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  color: #ddd;
-  font-size: 20px;
-  padding: 30px;
+.ChampionTournamentTitle{
+  font-size: 40px;
+  color: white;
   text-align: left;
+  padding-bottom: 30px;
 }
-.ChampionContainer:hover .ChampionText{
-  opacity: 1;
-}
-.ChampionContainer:hover{
-  background-color: rgb(0, 0, 0);
-  opacity: .8;
+.ChampionTournamentText{
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+  width: 80%;
 }
 .descriptionSectiontwo{
   height: 40vh;
@@ -593,10 +601,8 @@ p { margin:0 }
 }
 
 .AboutImageGrid{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
   height: 20vh;
+  background-image: url("/");
 }
 
 /* -------------MOBILE MEDIA------------*/
@@ -639,13 +645,13 @@ p { margin:0 }
   
   /* ------------ABOUT PAGE ------------*/
   .AboutDescription{
-    font-size: 12px;
+    font-size: 15px;
   }
   .AboutDescriptiontwo{
-    font-size: 12px;
+    font-size: 15px;
   } 
-  .ChampionText{
-    font-size: 12px;
+  .ChampionTournamentText{
+    font-size: 15px;
   }
 
 

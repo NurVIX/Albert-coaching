@@ -13,7 +13,9 @@ function HomePage() {
                 <div className="titleHome">
                     <p className='AlbertoTitle'>Alberto Quijada</p>
                     <p className='OnlineTitle'>Online Coaching</p>
-                    <div className='CostumeButton' onClick={() => window.open("https://4ydc94jlqiw.typeform.com/to/LSUw3cp0", "_blank")}>SIGN UP</div>
+                    <div className='buttomPlacement'>
+                        <div className='CostumeButton' onClick={() => window.open("https://4ydc94jlqiw.typeform.com/to/LSUw3cp0", "_blank")}>SIGN UP NOW</div>
+                    </div>
                 </div>
             </header>
             <section className="divspace">

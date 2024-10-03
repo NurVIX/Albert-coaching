@@ -77,7 +77,7 @@ function Programs() {
                 Diet and cardio adjustments as needed based on your progress.</p>
               </div>
             )}
-            <img src={'/static/supplement.heic'} className="coachingImage" alt="second" />
+            <img src={'/static/supplement.webp'} className="coachingImage" alt="second" />
             
           </div>
         </div>
