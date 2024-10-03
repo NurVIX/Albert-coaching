@@ -1,7 +1,15 @@
 body {
   margin: 0;
 }
-
+Button{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f5ecec;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  z-index: 10;
+}
 p { margin:0 }
   
   footer{
@@ -151,18 +159,13 @@ p { margin:0 }
   font-family: 'Great Vibes';
 }
 .CostumeButton{
-  width: 150px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
   border:3px;
-  border-color: white;
-  padding: 10px;
-  background-color:black ;
   font-family: 'DM Sans';
   color: white;
   text-align: center;
   line-height: central;
-  display: flex;
-  justify-content: center;
 }
 .CostumeButton-button:hover{
   background-color: #ffffff;
